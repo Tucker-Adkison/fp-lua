@@ -10,11 +10,13 @@ describe('test curry', function()
     assert.are.equals(18, add(5)(6)(7))
     assert.are.equals(add(5, 6, 7), add(5)(6)(7))
 
-    assert.are.equals("function", type(add(5)))
-    assert.are.equals("function", type(add(5, 6)))
-    assert.are.equals("function", type(add(5)(6)))
+    assert.are.equals('function', type(add(5)))
+    assert.are.equals('function', type(add(5, 6)))
+    assert.are.equals('function', type(add(5)(6)))
   end)
+end)
 
+describe('test partial', function() 
   it('partial works as exected', function() 
     local add3 = curry_module.partial(function(a, b, c) 
       return a + b + c

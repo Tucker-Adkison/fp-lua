@@ -507,7 +507,7 @@ MIT License - see LICENSE file for details
 ## Roadmap
 
 - [x] Currying
-- [ ] Table Operations
+- [x] Table Operations
 - [ ] Comparison Helpers
 - [ ] List Transformations
 - [ ] Folds and Scans
